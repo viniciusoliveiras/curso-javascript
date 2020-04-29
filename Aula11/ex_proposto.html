@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NACIONALIDADE</title>
+    <style>
+    h1{
+        text-align: center;
+    }
+    body{
+        background-color: rgb(250, 250, 107);
+    }
+
+    </style>
+</head>
+<body>
+    <h1>Sistema de Nacionalidade</h1>
+    País onde nasceu: <input type="text" name="txtvel" id="txtvel">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+    <script>
+            function verificar() {
+            var txtv = window.document.querySelector('input#txtvel')
+            var res = window.document.querySelector('div#res')
+            var nacio = txtv.value
+            res.innerHTML = `<p>O país inserido foi <strong>${nacio}</strong></p>`
+            if (nacio === "Brasil"){
+                res.innerHTML += `<p> Você é brasileiro!</p>`
+            } else {
+                res.innerHTML += `<p>Você é estrangeiro!</p>`
+            
+            }
+        }
+
+        //Exercício proposto: utilizar o ex009.js em HTML
+    </script>
+</body>
+</html>
