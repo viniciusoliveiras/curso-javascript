@@ -1,5 +1,5 @@
 body {
-    background: rgb(70, 142, 236);
+    background: #679;
     font: normal 15pt Arial;
     }
     
@@ -18,11 +18,18 @@ body {
     }
     
     select#flista{
-        width: 150px;
+        width: 200px;
     }
 
     footer{
         color: white;
         text-align: center;
-        font-style: italic;
+        font-family:"Billabong";
+        color: white;
+        
+    }
+
+    a {
+        color:inherit
+        
     }
